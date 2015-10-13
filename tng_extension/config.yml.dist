@@ -1,0 +1,75 @@
+# Enabled OpenID providers
+providers:
+    Local:
+        label: Sign in with a local account
+        enabled: false
+        keys:
+            id: 
+            secret: localdefault
+        scopes: [ user ]
+    Google:
+        label: Sign in with Google
+        enabled: false
+        keys:
+            id: "*** your ID here ***"
+            secret: "*** your secret here ***"
+        scopes: [ openid, profile, email ]
+
+    Facebook:
+        label: Sign in with Facebook
+        enabled: false
+        keys:
+            id: "*** your ID here ***"
+            secret: "*** your secret here ***"
+        scopes: [ email ]
+
+    GitHub:
+        label: Sign in with Github
+        enabled: false
+        keys:
+            id: "*** your ID here ***"
+            secret: "*** your secret here ***"
+        scopes: [ user ]
+
+# Cookies
+#
+# The paths to set authentication cookies for.
+# - Default cookie is set to '/'
+# - Override by enabling `allowed_cookie_paths` and set an array of relative URIs
+#
+#allowed_cookie_paths: ['/profiles', '/members']
+
+# Templates
+template:
+    login: _login.twig
+    password: _password.twig
+    password_parent: password.twig
+    feedback: _feedback.twig
+    button: _button.twig
+    error: error/_clientlogin_error.twig
+    error_parent: error/clientlogin_error.twig
+
+label:
+    logout: Logout
+
+# Use the Zocial styling CSS for buttons
+#
+# You must also install the 'bolt/zocial-icons' extension
+zocial: false
+
+# The basepath for the extension's routes. Do not include the leading slash ('/')
+# This path determines the location used to log in or out, like '/authenticate/login'
+basepath: authenticate
+
+# This is the key that is used in the provider callback. Changing this is NOT recommended.
+response_noun: provider
+
+# Number of days to allow login sessions to be valid for
+login_expiry: 14
+
+# Enabling debug_mode will make this extension write out a logfile to the
+# {BOLT_CACHE_DIR}/authenticate.log file.
+#
+# Note: This file wil get huge, quickly!
+debug:
+  enabled: false

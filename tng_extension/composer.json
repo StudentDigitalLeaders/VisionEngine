@@ -1,0 +1,55 @@
+{
+	"name" : "bolt/clientlogin",
+	"description" : "OAuth login for a Bolt site's clients in the frontend",
+	"type" : "bolt-extension",
+	"keywords" : [
+		"oauth",
+		"login",
+		"Google",
+		"Facebook",
+		"Twitter",
+		"GitHub"
+	],
+	"license" : "GPL-3.0+",
+	"authors" : [{
+			"name" : "Gawain Lynch",
+			"email" : "gawain.lynch@gmail.com"
+		}
+	],
+	"require" : {
+		"php" : ">=5.5.9",
+		"bolt/bolt" : ">=2.3.0,<3.0.0"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^4.8"
+	},
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"autoload" : {
+		"files" : [
+			"init.php"
+		],
+		"psr-4" : {
+			"Bolt\\Extension\\Bolt\\ClientLogin\\" : [
+				"",
+				"src/"
+			],
+			"Bolt\\Extension\\Bolt\\ClientLogin\\Tests\\" : "tests/",
+			"League\\Event\\" : "lib/League/Event",
+			"League\\OAuth2\\Client\\" : "lib/League/OAuth2/Client/",
+			"League\\OAuth2\\Server\\" : "lib/League/OAuth2/Server/",
+			"Stevenmaguire\\OAuth2\\Client\\" : "lib/League/OAuth2/Client/"
+		}
+	},
+	"autoload-dev" : {
+		"psr-4" : {
+			"Bolt\\Extension\\Bolt\\ClientLogin\\Tests\\" : "tests/",
+			"Bolt\\Tests\\" : "vendor/bolt/bolt/tests/phpunit/unit/"
+		}
+	},
+	"extra" : {
+		"branch-alias" : {
+			"dev-development" : "3.0.x-dev"
+		}
+	}
+}
