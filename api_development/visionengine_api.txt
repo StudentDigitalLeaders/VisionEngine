@@ -1,0 +1,18 @@
+API Development - Help
+Use this template to start every single document:
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>API Development</title>
+</head>
+<body>
+
+</body>
+</html>
+
+Write inside the "body" tags.
+use
+<p>  </p> for text. Write inside the "p" tags.
+<img src=""> put the image URL inside.
+<a href=""> </a> put the url inside the link after the href and the display name before the /a tag.
