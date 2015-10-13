@@ -2,7 +2,7 @@ Client Login
 ============
 
 An extension to allow the use of TNG retangible files. This extension uses 
-<a href="http://www.github.com/nonsensical-nerd/" target="_blank">NSN's</a> usage files for the actual authentication process
+<a href="http://www.github.com/nonsensical-nerd/" target="_blank">NSN's</a> usage files for the actual authentication process.
 
 Installation
 ============
