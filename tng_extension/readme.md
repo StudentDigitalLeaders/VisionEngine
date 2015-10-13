@@ -1,4 +1,4 @@
-Client Login
+Client Use
 ============
 
 An extension to allow the use of TNG retangible files. This extension uses 
