@@ -12,8 +12,8 @@
 	],
 	"license" : "GPL-3.0+",
 	"authors" : [{
-			"name" : "Gawain Lynch",
-			"email" : "gawain.lynch@gmail.com"
+			"name" : "Larry Tang",
+			"email" : "larryystang@gmail.com"
 		}
 	],
 	"require" : {
