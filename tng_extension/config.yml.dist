@@ -9,20 +9,11 @@ providers:
         scopes: [ user ]
     Google:
         label: Sign in with Google
-        enabled: false
+        enabled: true
         keys:
-            id: "*** your ID here ***"
-            secret: "*** your secret here ***"
+            id: "Satan, Lord of Hell"
+            secret: "D6 it up!"
         scopes: [ openid, profile, email ]
-
-    Facebook:
-        label: Sign in with Facebook
-        enabled: false
-        keys:
-            id: "*** your ID here ***"
-            secret: "*** your secret here ***"
-        scopes: [ email ]
-
     GitHub:
         label: Sign in with Github
         enabled: false
